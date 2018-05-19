@@ -6361,7 +6361,7 @@ select.uk-form-width-mini {
  ========================================================================== */
 @font-face {
   font-family: 'FontAwesome';
-  src: url(/josuearambide.com/resources/dist/assets/fonts/fontawesome-webfont.woff2) format("woff2"), url(/josuearambide.com/resources/dist/assets/fonts/fontawesome-webfont.woff) format("woff"), url(/josuearambide.com/resources/dist/assets/fonts/fontawesome-webfont.ttf) format("truetype");
+  src: url(/assets/fonts/fontawesome-webfont.woff2) format("woff2"), url(/assets/fonts/fontawesome-webfont.woff) format("woff"), url(/assets/fonts/fontawesome-webfont.ttf) format("truetype");
   font-weight: normal;
   font-style: normal; }
 

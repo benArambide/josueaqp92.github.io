@@ -57,7 +57,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/josuearambide.com/resources/dist/";
+/******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = 1);
@@ -10457,14 +10457,14 @@ __webpack_require__(8);
 
 __webpack_require__(9);
 
-__webpack_require__(20);
+__webpack_require__(10);
 
 // assets
-__webpack_require__(10);
+__webpack_require__(11);
 
 window.jQuery = window.$ = window.jquery = __webpack_require__(0);
 
-__webpack_require__(11);
+__webpack_require__(12);
 
 /***/ }),
 /* 2 */
@@ -10474,48 +10474,54 @@ __webpack_require__(11);
 
 /***/ }),
 /* 3 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "/background.mp4";
+module.exports = __webpack_require__.p + "assets/video/background.mp4";
 
 /***/ }),
 /* 4 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "/ja-logo-1.svg";
+module.exports = __webpack_require__.p + "assets/img/ja-logo-1.svg";
 
 /***/ }),
 /* 5 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "/ja-logo-2.svg";
+module.exports = __webpack_require__.p + "assets/img/ja-logo-2.svg";
 
 /***/ }),
 /* 6 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "/profile.jpg";
+module.exports = __webpack_require__.p + "assets/img/profile.jpg";
 
 /***/ }),
 /* 7 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "/background-circle.png";
+module.exports = __webpack_require__.p + "assets/img/background-circle.png";
 
 /***/ }),
 /* 8 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "/background-img-1.jpg";
+module.exports = __webpack_require__.p + "assets/img/background-img-1.jpg";
 
 /***/ }),
 /* 9 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "/background-img-2.jpg";
+module.exports = __webpack_require__.p + "assets/img/background-img-2.jpg";
 
 /***/ }),
 /* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/img/favicon.ico";
+
+/***/ }),
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10544,7 +10550,7 @@ function onScrollUpOrDown() {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14462,20 +14468,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     });
 })(UIkit2);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-/* 12 */,
-/* 13 */,
-/* 14 */,
-/* 15 */,
-/* 16 */,
-/* 17 */,
-/* 18 */,
-/* 19 */,
-/* 20 */
-/***/ (function(module, exports) {
-
-module.exports = "/favicon.ico";
 
 /***/ })
 /******/ ]);
