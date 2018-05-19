@@ -4,9 +4,10 @@
 var webpack =  require('webpack');
 var path =  require('path');
 
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const extractSass = new ExtractTextPlugin({
-   filename: "assets/css/app.css"
+  filename: "assets/css/app.css"
   //disable: process.env.NODE_ENV === "development"
 });
 
@@ -95,3 +96,19 @@ module.exports = {
       extractSass
    ]
 }
+
+if (process.env.NODE_ENV === 'production') {
+   //module.exports.devtool = '#source-map'
+   module.exports.plugins = (module.exports.plugins || []).concat([
+       new webpack.DefinePlugin({
+          'process.env': {
+          NODE_ENV: '"production"'
+          }
+       }),
+       new webpack.optimize.UglifyJsPlugin()
+       ,
+       new webpack.LoaderOptionsPlugin({
+          minimize: true
+       })
+   ])
+ }
