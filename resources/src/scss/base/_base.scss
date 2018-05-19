@@ -1,0 +1,61 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Passion+One:400,700');
+
+
+html, body{
+   font-family: 'Montserrat', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5{
+   font-family: 'Passion One', sans-serif !important;
+   font-weight: bold;
+}
+
+a{
+   text-decoration: none !important;
+}
+
+.ro-row{
+   width: 80%;
+   margin: 4rem auto;
+}
+
+.ro-row-right{
+   width: 80%;
+   margin-right: auto;
+}
+.ro-row-left{
+   width: 80%;
+   margin-left: auto;
+}
+
+.ro-page{
+   height: 100vh;
+   &.ro-row{
+      margin: 0 auto !important;
+   }
+}
+
+*{box-sizing: border-box;}
+
+.ro-title{
+   
+   &.ro-title-large{
+      font-size: 4rem !important;
+   }
+   &.ro-title-white{
+      color: #fff;
+   }
+}
+
+.ro-background-cover{
+   background-repeat: no-repeat !important;
+   background-size: cover !important;
+   background-position: center !important;
+}
+
+.ro-background-light{
+   background: $color-sky-light;
+}
