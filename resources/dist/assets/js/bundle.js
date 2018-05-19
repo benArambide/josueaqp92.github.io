@@ -57,116 +57,14 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/dist/";
+/******/ 	__webpack_require__.p = "/josuearambide.com/resources/dist/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-__webpack_require__(1);
-
-__webpack_require__(2);
-
-__webpack_require__(3);
-
-__webpack_require__(4);
-
-__webpack_require__(5);
-
-__webpack_require__(6);
-
-__webpack_require__(17);
-
-__webpack_require__(20);
-
-__webpack_require__(7);
-
-// assets
-
-
-window.jQuery = window.$ = window.jquery = __webpack_require__(8);
-
-__webpack_require__(19);
-
-/***/ }),
-/* 1 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports) {
-
-module.exports = "/arequipamia.com/resources/ro_theme/dist/assets/img/background.mp4";
-
-/***/ }),
-/* 3 */
-/***/ (function(module, exports) {
-
-module.exports = "/arequipamia.com/resources/ro_theme/dist/assets/img/ja-logo-1.svg";
-
-/***/ }),
-/* 4 */
-/***/ (function(module, exports) {
-
-module.exports = "/arequipamia.com/resources/ro_theme/dist/assets/img/ja-logo-2.svg";
-
-/***/ }),
-/* 5 */
-/***/ (function(module, exports) {
-
-module.exports = "/arequipamia.com/resources/ro_theme/dist/assets/img/profile.jpg";
-
-/***/ }),
-/* 6 */
-/***/ (function(module, exports) {
-
-module.exports = "/arequipamia.com/resources/ro_theme/dist/assets/img/background-circle.png";
-
-/***/ }),
-/* 7 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function($) {
-
-$(document).ready(function () {
-   onScrollUpOrDown();
-});
-
-function onScrollUpOrDown() {
-   var lastScrollTop = 0;
-   var flag = $('#flag').offset().top;
-   $(window).scroll(function (event) {
-      var st = $(this).scrollTop();
-      if (flag - 100 >= st) {
-         $('#ro-header').removeClass('bounceInDown');
-         $('#ro-header').addClass('bounceOutUp');
-         lastScrollTop = st;
-         return;
-      }
-      if (st > lastScrollTop) {
-         $('#ro-header').removeClass('bounceInDown');
-         $('#ro-header').addClass('bounceOutUp');
-      } else {
-         $('#ro-header').removeClass('bounceOutUp');
-         $('#ro-header').addClass('bounceInDown');
-      }
-      lastScrollTop = st;
-   });
-}
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8)))
-
-/***/ }),
-/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10537,22 +10435,116 @@ return jQuery;
 
 
 /***/ }),
-/* 9 */,
-/* 10 */,
-/* 11 */,
-/* 12 */,
-/* 13 */,
-/* 14 */,
-/* 15 */,
-/* 16 */,
-/* 17 */
-/***/ (function(module, exports) {
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "/arequipamia.com/resources/ro_theme/dist/assets/img/background-img-1.jpg";
+"use strict";
+
+
+__webpack_require__(2);
+
+__webpack_require__(3);
+
+__webpack_require__(4);
+
+__webpack_require__(5);
+
+__webpack_require__(6);
+
+__webpack_require__(7);
+
+__webpack_require__(8);
+
+__webpack_require__(9);
+
+__webpack_require__(20);
+
+// assets
+__webpack_require__(10);
+
+window.jQuery = window.$ = window.jquery = __webpack_require__(0);
+
+__webpack_require__(11);
 
 /***/ }),
-/* 18 */,
-/* 19 */
+/* 2 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports) {
+
+module.exports = "/background.mp4";
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports) {
+
+module.exports = "/ja-logo-1.svg";
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports) {
+
+module.exports = "/ja-logo-2.svg";
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports) {
+
+module.exports = "/profile.jpg";
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports) {
+
+module.exports = "/background-circle.png";
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports) {
+
+module.exports = "/background-img-1.jpg";
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports) {
+
+module.exports = "/background-img-2.jpg";
+
+/***/ }),
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function($) {
+
+$(document).ready(function () {
+   onScrollUpOrDown();
+});
+
+function onScrollUpOrDown() {
+   var lastScrollTop = 0;
+   var flag = $('#flag').offset().top;
+   $(window).scroll(function (event) {
+      var st = $(this).scrollTop();
+      if (st >= flag) {
+         $('#ro-header').removeClass('bounceOutUp');
+         $('#ro-header').addClass('bounceInDown');
+         $('#ro-header').removeClass('hide');
+      } else {
+         if ($('#ro-header').hasClass('hide')) return;
+         $('#ro-header').removeClass('bounceInDown');
+         $('#ro-header').addClass('bounceOutUp');
+      }
+   });
+}
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14469,13 +14461,21 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         }
     });
 })(UIkit2);
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
+/* 12 */,
+/* 13 */,
+/* 14 */,
+/* 15 */,
+/* 16 */,
+/* 17 */,
+/* 18 */,
+/* 19 */,
 /* 20 */
 /***/ (function(module, exports) {
 
-module.exports = "/arequipamia.com/resources/ro_theme/dist/assets/img/background-img-2.jpg";
+module.exports = "/favicon.ico";
 
 /***/ })
 /******/ ]);

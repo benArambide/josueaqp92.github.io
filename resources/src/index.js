@@ -10,7 +10,7 @@ import "./img/profile.jpg";
 import "./img/background-circle.png";
 import "./img/background-img-1.jpg";
 import "./img/background-img-2.jpg";
-
+import "./img/favicon.ico";
 
 require("./js");
 

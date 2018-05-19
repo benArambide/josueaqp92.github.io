@@ -91,7 +91,9 @@
 }
 
 .ro-header-nav{
-   
+   &.hide{
+      transform: translate3d(0, -2000px, 0);
+   }
    height: 80px;
    z-index: 1000;
    background: #fff;

@@ -15,7 +15,7 @@ module.exports = {
    entry: './src/index.js',
    output: {
       filename: 'assets/js/bundle.js',
-      publicPath: (process.env.NODE_ENV === 'production') ? '/' : '/dist/',
+      publicPath: (process.env.NODE_ENV === 'production') ? '/' : '/josuearambide.com/resources/dist/',
       path: path.resolve(__dirname, 'dist')
    },
    resolve : {
@@ -62,7 +62,7 @@ module.exports = {
           loader: 'file-loader',
           options: {
             name: '[name].[ext]',
-            publicPath: (process.env.NODE_ENV === 'production') ? '/resources/ro_theme/dist/assets/fonts/' : '/arequipamia.com/resources/ro_theme/dist/assets/fonts/',
+            publicPath: '',
             outputPath : 'assets/fonts/' 
           }
         },
@@ -71,7 +71,7 @@ module.exports = {
           loader: 'file-loader',
           options: {
             name: '[name].[ext]',
-            publicPath: (process.env.NODE_ENV === 'production') ? '/' : '/arequipamia.com/resources/ro_theme/dist/assets/img/',
+            publicPath: '',
             outputPath : 'assets/img/' 
           }
         },
@@ -80,7 +80,7 @@ module.exports = {
          loader: 'file-loader',
          options: {
            name: '[name].[ext]',
-           publicPath: (process.env.NODE_ENV === 'production') ? '/' : '/arequipamia.com/resources/ro_theme/dist/assets/img/',
+           publicPath: '',
            outputPath : 'assets/video/' 
          }
        }
