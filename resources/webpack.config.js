@@ -16,7 +16,7 @@ module.exports = {
    entry: './src/index.js',
    output: {
       filename: 'assets/js/bundle.js',
-      publicPath: (process.env.NODE_ENV === 'production') ? 'resources/dist/' : '/josuearambide.com/resources/dist/',
+      publicPath: (process.env.NODE_ENV === 'production') ? '/resources/dist/' : '/josuearambide.com/resources/dist/',
       path: path.resolve(__dirname, 'dist')
    },
    resolve : {
