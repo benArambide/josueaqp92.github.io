@@ -38,6 +38,22 @@ a{
    }
 }
 
+
+@media (max-width: 959px) {
+   .ro-row, .ro-row-left, .ro-row-right{
+      width: 92%;
+      margin-right: auto;
+      margin-left: auto;
+   }
+   .ro-page{
+      padding: 2rem 0;
+      height: auto;
+      .uk-width-large-1-2{
+         margin-bottom: 1rem;
+      }
+   }
+}
+
 *{box-sizing: border-box;}
 
 .ro-title{

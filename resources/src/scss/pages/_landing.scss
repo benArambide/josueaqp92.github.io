@@ -4,6 +4,11 @@
    height: 100vh;
    position: relative;
    overflow: hidden;
+   background: url('../img/background-video.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+
    &:before{
       content: '';
       position: absolute;
@@ -82,6 +87,15 @@
    .ro-video{
       width: 100%;
       position: absolute;
+      
+   }
+   @media (max-width: 959px) {
+      height: 80vh;
+      .ro-video{
+         display: none;
+      }
+
+      
    }
 }
 
@@ -91,6 +105,15 @@
 }
 
 .ro-header-nav{
+
+   #toggle{
+      display: none;
+   }
+
+   .nav-mobile{
+      display: none;
+   }
+
    &.hide{
       transform: translate3d(0, -2000px, 0);
    }
@@ -136,6 +159,60 @@
          }
       }
    }
+
+   .nav-mobile-wrap{
+      height: 0;
+      min-height: 0;
+      overflow: hidden;
+      transition: all .5s linear;
+
+      &.visible{
+         min-height: 200px;
+      }
+
+      .nav-mobile{
+         background: #fff;
+         margin: 0;
+         margin-top: 12px;
+         list-style: none;
+         padding: 1rem;
+         @extend .ro-showdow;
+   
+         li{
+            display: inline-block;
+            margin-bottom: 5px;
+            a{
+   
+            }
+         }
+      }
+   }
+
+   @media (max-width: 959px) {
+      height: 60px;
+      .ro-row{
+         width: 96%;
+         .nav{
+            display: none;
+         }
+      }
+
+      .logo{
+         width: 200px !important;
+         height: 40px !important;
+      }
+      #toggle{
+         display: block !important;
+         padding: 0 10px;
+         i{
+            font-size: 30px;
+            line-height: 40px;
+         }
+      }
+      .nav-mobile{
+         display: block;
+      }
+   }
 }
 
 .ro-profile-img-wrap{
@@ -162,6 +239,10 @@
       &:hover{
          background: $color-blue-dark;
       }
+   }
+   @media (max-width: 959px) {
+      width: 92%;
+      margin: 2rem auto;
    }
 }
 

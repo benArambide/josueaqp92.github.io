@@ -1,6 +1,7 @@
 
 $( document ).ready(function() {
    onScrollUpOrDown();
+   $('#toggle').click(toggleNav);
 });
 
 
@@ -20,4 +21,8 @@ function onScrollUpOrDown(){
          $('#ro-header').addClass('bounceOutUp');
       }
    });
+}
+
+function toggleNav(){
+   $('.nav-mobile-wrap').toggleClass('visible');
 }
