@@ -170,7 +170,7 @@
                      <div class="ro-mb-2">
                         <i class="uk-icon uk-icon-cog ro-icon ro-icon-medium"></i>
                         <h2 class="ro-mt-0">Desarrollo de Páginas web</h2>
-                        <p>Tener un sitio es tener su empresa abierta y lista para ser descubierta, las 24 horas del día, los 7 días de la semana. Trabajo en el desarrollo de sitios web creativos, enfocándose siempre en la usabilidad y resposive design y que se adecuan a cualquier contenido.</p>
+                        <p>Tener un sitio es tener su empresa abierta y lista para ser descubierta, las 24 horas del día, los 7 días de la semana. Trabajo en el desarrollo de sitios web creativos, enfocándose siempre en la usabilidad y responsive design y que se adecuan a cualquier contenido.</p>
                      </div>
                      <div class="ro-mb-2">
                         <i class="uk-icon uk-icon-shopping-bag ro-icon ro-icon-medium"></i>
@@ -384,16 +384,26 @@
                      </div>
                      <div class="ro-mb-1">
                         <label for="" class="uk-label ro-color-white">Correo Electrónico</label>
-                        <input type="text" class="uk-width-1-1" id="contact-form-mail">
+                        <input type="email" class="uk-width-1-1" id="contact-form-mail">
                      </div>
                      <div class="ro-mb-1">
                         <label for="" class="uk-label ro-color-white">Correo Electrónico</label>
                         <textarea rows="3" class="uk-width-1-1" id="contact-form-message"></textarea>
                      </div>
                      <div class="ro-mb-1">
-                        <button class="ro-button ro-button-transparent">
+                        <button id="contact-form-btn" class="ro-button ro-button-transparent">
                            Enviar
                         </button>
+                     </div>
+                     <div>
+                        <div id="msg-danger" class="uk-alert uk-alert-danger" data-uk-alert style="display:none;"> 
+                           <a href="#" class="uk-alert-close uk-close" data-uk-close></a>
+                           Hubo un problema enviando el correo.
+                        </div>
+                        <div id="msg-success" class="uk-alert uk-alert-success" data-uk-alert style="display:none;"> 
+                           <a href="#" class="uk-alert-close uk-close" data-uk-close></a>
+                           Mensaje enviado.
+                        </div>
                      </div>
                   </form>
                </div>
