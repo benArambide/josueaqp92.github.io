@@ -19,7 +19,7 @@ a{
 
 .ro-row{
    width: 80%;
-   margin: 4rem auto;
+   margin: auto;
 }
 
 .ro-row-right{
@@ -41,7 +41,7 @@ a{
 
 @media (max-width: 959px) {
    .ro-row, .ro-row-left, .ro-row-right{
-      width: 92%;
+      width: 88%;
       margin-right: auto;
       margin-left: auto;
    }
@@ -54,12 +54,16 @@ a{
    }
 }
 
-*{box-sizing: border-box;}
+*{box-sizing: border-box;outline: none;}
 
 .ro-title{
    
    &.ro-title-large{
-      font-size: 4rem !important;
+      font-size: 3rem !important;
+      margin-top: 5px;
+   }
+   &.ro-title-medium{
+      font-size: 2rem !important;
    }
    &.ro-title-white{
       color: #fff;
@@ -74,4 +78,33 @@ a{
 
 .ro-background-light{
    background: $color-sky-light;
+}
+
+
+.ro-message-block{
+   display: inline-block;
+   padding: 10px 20px;
+   background: $color-blue-light;
+   color: #fff;
+}
+
+.ro-loading{
+   background: $color-blue;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   z-index: 10000;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.ro-icon{
+   &.ro-icon-medium{
+      font-size: 50px;
+      line-height: 40px;
+      color: $color-blue-dark;
+   }
 }

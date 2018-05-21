@@ -1,0 +1,53 @@
+.ro-panel{
+   position: relative;
+   overflow: hidden;
+   margin-bottom: 10px !important;
+   &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: #000;
+      opacity: 0;
+      transition: all .2s linear;
+   }
+   .ro-panel-details{
+      position: absolute;
+      width: 80%;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      background: $color-blue-dark;
+      z-index: 10;
+      padding: 10px;
+      color: #fff;
+      margin-left: -80%;
+      transition: all .2s linear;
+      p{
+         margin-bottom: 5px;
+      }
+      span{
+         font-size: 10px;
+         line-height: 0px;
+      }
+      .ro-panel-actions{
+         position: absolute;
+         bottom: 10px;
+         a{
+            font-size: 30px;
+            display: block;
+            color: $color-blue;
+         }
+      }
+   }
+   &:hover{
+      .ro-panel-details{
+         margin-left: 0;
+      }
+      &:before{
+         opacity: .6;
+      }
+   }
+}

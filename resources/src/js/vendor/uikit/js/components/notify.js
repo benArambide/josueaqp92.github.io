@@ -1,19 +1,5 @@
 /*! UIkit 2.27.2 | http://www.getuikit.com | (c) 2014 YOOtheme | MIT License */
-(function(addon) {
-
-    var component;
-
-    if (window.UIkit2) {
-        component = addon(UIkit2);
-    }
-
-    if (typeof define == 'function' && define.amd) {
-        define('uikit-notify', ['uikit'], function(){
-            return component || addon(UIkit2);
-        });
-    }
-
-})(function(UI){
+(function(UI){
 
     "use strict";
 

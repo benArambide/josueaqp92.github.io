@@ -2,11 +2,11 @@
 
 .ro-button{
    display: inline-block;
-   border-radius: 10px;
+   border-radius: 5px;
    transition: all .5s ease;
    text-decoration: none;
    color: $color-blue-dark;
-   font-size: 1.5rem;
+   font-size: 1rem;
    border: none;
    padding: 10px 20px;
    &.ro-button-bordered{
@@ -34,6 +34,14 @@
       &:hover{
          background: #fff;
          color: $color-blue-dark;
+      }
+   }
+
+   &.ro-button-blue{
+      background: $color-blue;
+      color: #fff;
+      &:hover{
+         background: $color-blue-dark;
       }
    }
 }

@@ -1,14 +1,14 @@
 
 .ro-modal{
-   background: rgba(#fff, .8 ) !important;
+   background: rgba(0, 0, 0, 0.64) !important;
    .ro-modal-dialog{
       @extend .ro-showdow;
-      border-radius: 10px;
+      border-radius: 5px;
       position: relative;
       .uk-modal-close{
          position: absolute;
-         right: 10px;
-         top: -15px;
+         right: 15px;
+         top: 15px;
          color: $color-blue-dark;
          font-size: 25px;
       }

@@ -74,16 +74,16 @@ module.exports = {
             name: '[name].[ext]',
             outputPath : 'assets/img/' 
           }
-        },
-        {
-         test: /\.(mp4)$/,
-         loader: 'file-loader',
-         options: {
-           name: '[name].[ext]',
-           publicPath: '',
-           outputPath : 'assets/video/' 
+         },
+         {
+            test: /\.(mp4)$/,
+            loader: 'file-loader',
+            options: {
+            name: '[name].[ext]',
+            publicPath: '',
+            outputPath : 'assets/video/' 
+            }
          }
-       }
       ]
    },
    plugins: [

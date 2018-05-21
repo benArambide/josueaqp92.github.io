@@ -267,3 +267,61 @@
       }
    }
 }
+
+.ro-copyright{
+   background: #121111;
+   color: #fff;
+   padding: 10px;
+}
+
+.skill-tools{
+   img{
+      height: 50px;
+      width: auto;
+      margin-bottom: 5px;
+      margin-right: 5px;
+   }
+}
+
+.ro-skills{
+   .ro-skill{
+      margin-bottom: 12px;
+      font-size: 10px;
+      .ro-skill-bar{
+         width: 100%;
+         display: block;
+         height: 10px;
+         background: #ddd;
+         position: relative;
+         &[class*='ro-skill-value']{
+            &:before{
+               content: '';
+               height: 10px;
+               background: $color-blue;
+               position: absolute;
+               left: 0;
+            }
+         }
+         &.ro-skill-value-70{
+            &:before{
+            width:70%;
+            }
+         }
+         &.ro-skill-value-80{
+            &:before{
+            width:80%;
+            }
+         }
+         &.ro-skill-value-90{
+            &:before{
+            width:90%;
+            }
+         }
+         &.ro-skill-value-100{
+            &:before{
+            width:100%
+            };
+         }
+      }
+   }
+}
