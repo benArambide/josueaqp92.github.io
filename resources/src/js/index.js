@@ -2,7 +2,7 @@ import Typed from 'typed.js';
 
 $( document ).ready(function() {
 
-   $('#loading').fadeOut();
+   setTimeout( function() { $('#loading').fadeOut(); }, 2000);
 
    onScrollUpOrDown();
    $('#toggle').click(toggleNav);
@@ -21,6 +21,7 @@ $( document ).ready(function() {
     var typed = new Typed(".typing", options);
 
     $('#contact-form').submit(sendMessage);
+    smoothScroll();
 });
 
 
@@ -74,4 +75,14 @@ function sendMessage(event){
       $('#contact-form-message').val('');
       $('#contact-form-btn').text('Enviar');
    });
+}
+
+function smoothScroll(){
+   $(document).on('click', 'a[href^="#"]', function (event) {
+      event.preventDefault();
+  
+      $('html, body').animate({
+          scrollTop: $($.attr(this, 'href')).offset().top
+      }, 500);
+  });
 }

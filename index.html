@@ -23,10 +23,11 @@
 
 
    <link rel="shortcut icon" type="image/x-icon" href="resources/dist/assets/img/favicon.ico">
-   <link rel="stylesheet" href="resources/dist/assets/css/app.css">
-   <script src="resources/dist/assets/js/bundle.js"></script>
+   <link rel="stylesheet" href="resources/dist/assets/css/app.css?v=1">
+   <script src="resources/dist/assets/js/bundle.js?v=1"></script>
 </head>
 <body>
+   <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
    <section id="loading" class="ro-loading">
       <img  src="resources/dist/assets/img/logo-iso.png" class="pulse animated infinite" alt="Josue Benjamin Arambide Quispe" style="width: 100px;">
    </section>
@@ -38,32 +39,38 @@
          </a>
          <ul class="nav">
             <li>
-               <a href="">PERFIL</a>
+               <a href="#profile">PERFIL</a>
             </li>
             <li>
-               <a href="">HABILIDADES</a>
+               <a href="#services">SERVICIOS</a>
             </li>
             <li>
-               <a href="">PORTAFOLIO</a>
+               <a href="#skills">HABILIDADES</a>
             </li>
             <li>
-               <a href="">CONTACTO</a>
+               <a href="#experience">PORTAFOLIO</a>
+            </li>
+            <li>
+               <a href="#contact">CONTACTO</a>
             </li>
          </ul>
       </div>
       <div class="nav-mobile-wrap">
          <ul class="nav-mobile uk-text-center">
             <li>
-               <a href="" class="ro-button ro-button-medium">PERFIL</a>
+               <a href="#profile" class="ro-button ">PERFIL</a>
             </li>
             <li>
-               <a href="" class="ro-button ro-button-medium">HABILIDADES</a>
+               <a href="#services" class="ro-button ">SERVICIOS</a>
             </li>
             <li>
-               <a href="" class="ro-button ro-button-medium">PORTAFOLIO</a>
+               <a href="#skills" class="ro-button ">HABILIDADES</a>
             </li>
             <li>
-               <a href="" class="ro-button ro-button-medium">CONTACTO</a>
+               <a href="#experience" class="ro-button ">PORTAFOLIO</a>
+            </li>
+            <li>
+               <a href="#contact" class="ro-button ">CONTACTO</a>
             </li>
          </ul>
       </div>
@@ -82,16 +89,19 @@
             <div class="nav-wrap">
                <ul class="nav">
                   <li>
-                     <a href="">PERFIL</a>
+                     <a href="#profile">PERFIL</a>
                   </li>
                   <li>
-                     <a href="">HABILIDADES</a>
+                     <a href="#services">SERVICIOS</a>
                   </li>
                   <li>
-                     <a href="">PORTAFOLIO</a>
+                     <a href="#skills">HABILIDADES</a>
                   </li>
                   <li>
-                     <a href="">CONTACTO</a>
+                     <a href="#experience">PORTAFOLIO</a>
+                  </li>
+                  <li>
+                     <a href="#contact">CONTACTO</a>
                   </li>
                </ul>
             </div>
@@ -108,7 +118,7 @@
       
    </section>
 
-   <section class="ro-page">
+   <section class="ro-page" id="profile">
       <span id="flag"></span>
       <div class="uk-grid ro-height-1-1">
          <div class="uk-width-large-1-2 ro-height-1-1 ">
@@ -119,7 +129,7 @@
                   <p>
                   Hola! Mucho gusto, mi nombre es Josué Benjamín Arambide Quispe, tengo 25 años y soy Web Designer &  Frontend Developer, tengo tambien conocimiento de Backend. :D
                   </p>
-                  <p>Estudie Ciencia de la Computación y durante este periodo me adentre en lo que es la programación web e inmediatamente quede facinado, amo desarrollar web y siempre me pongo a actualizar mis conocimientos ya que el mundo web se va actualizando con mucha frecuencia.</p>
+                  <p>Estudie Ciencia de la Computación y durante este periodo me adentre en lo que es la programación web e inmediatamente quede fascinado, amo desarrollar web y siempre me pongo a actualizar mis conocimientos ya que el mundo web se va actualizando con mucha frecuencia.</p>
                   <div class="ro-mt-2">
                      <div>
                         <a href="#education" data-uk-modal="{center:true}" class="ro-button ro-button-blue ro-mb-1">
@@ -159,7 +169,7 @@
    </section>
 
 
-   <section class="ro-page ro-background-light ">
+   <section class="ro-page ro-background-light " id="services">
       <div class="ro-row ro-height-1-1">
          <div class="uk-grid ro-height-1-1">
             <div class="uk-width-large-1-1 ro-height-1-1 uk-flex uk-flex-middle">
@@ -180,7 +190,7 @@
                      <div class="ro-mb-2">
                         <i class="uk-icon uk-icon-mobile ro-icon ro-icon-medium"></i>
                         <h2 class="ro-mt-0">Optimización de Sitios</h2>
-                        <p>¿Sabías que actualmente en Perú, más del 60% del tráfico de internet se hace a través de teléfonos móviles? ¿El sitio de su empresa está preparado para este tipo de acceso? Actualizo y modernizo sitios, usando el reposive design, para que el mismo sea apto y visible en cualquier dispositivo.</p>
+                        <p>¿Sabías que actualmente en Perú, más del 60% del tráfico de internet se hace a través de teléfonos móviles? ¿El sitio de su empresa está preparado para este tipo de acceso? Actualizo y modernizo sitios, usando el reponsive design, para que el mismo sea apto y visible en cualquier dispositivo.</p>
                      </div>
                      <div class="ro-mb-2">
                         <i class="uk-icon uk-icon-sliders ro-icon ro-icon-medium"></i>
@@ -200,7 +210,7 @@
    </section>
 
 
-   <section class="ro-page">
+   <section class="ro-page" id="skills">
       <div class="ro-row ro-height-1-1">
          <div class="uk-grid ro-height-1-1">
             <div class="uk-width-large-1-2 ro-height-1-1 uk-flex uk-flex-middle">
@@ -271,7 +281,7 @@
       </div>
    </section>
 
-   <section class="ro-page ro-background-light">
+   <section class="ro-page ro-background-light" id="experience">
       <div class="ro-row ro-height-1-1">
          <div class="ro-height-1-1 uk-flex uk-flex-middle">
             <div class="uk-width-1-1">
@@ -345,7 +355,7 @@
       </div>
    </section>
 
-   <section class="ro-background-dark">
+   <section class="ro-background-dark" id="contact">
       <section class="ro-page ro-row ">
          <div class="uk-grid uk-grid-small ro-height-1-1">
             <div class="uk-width-large-1-2 ro-height-1-1 uk-flex uk-flex-middle">
@@ -353,6 +363,7 @@
                   <span class="ro-message-block">Dónde encontrarme</span>
                   <h1 class="ro-title ro-title-large ro-title-white">Contactos</h1>
                   <br>
+                  
                   <p class="ro-color-white">Las personas que se empeñan en perfeccionarse no tienen como perder. Si el mundo mejora, ellas estarán más preparadas para asumir su lugar en él que aquellas que no se preparan.</p>
                   <p class="ro-color-white">Contáctame e iniciemos un nuevo proyecto juntos.</p>
                   <div class="ro-mt-2 ro-mb-2">
