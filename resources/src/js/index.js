@@ -80,7 +80,7 @@ function sendMessage(event){
 function smoothScroll(){
    $(document).on('click', 'a[href^="#"]', function (event) {
       event.preventDefault();
-  
+      $('.nav-mobile-wrap').removeClass('visible');
       $('html, body').animate({
           scrollTop: $($.attr(this, 'href')).offset().top
       }, 500);
