@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="640f51da-df2d-4a0a-82ff-d16864897552" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Josue_Benjamín_Arambide_Quispe_-_Senior_Front_end_Developer.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/public/Josue_Benjamín_Arambide_Quispe_-_Senior_Front_end_Developer.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProfileSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProfileSection.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +56,7 @@
       <updated>1577292953678</updated>
       <workItem from="1577292956524" duration="14871000" />
       <workItem from="1591420216604" duration="4000" />
-      <workItem from="1591420235947" duration="1903000" />
+      <workItem from="1591420235947" duration="2975000" />
     </task>
     <task id="LOCAL-00001" summary="update index">
       <created>1577294803005</created>
@@ -84,7 +79,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577334259057</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="uidatng info">
+      <created>1591422160230</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1591422160230</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,9 +109,14 @@
     <MESSAGE value="update index" />
     <MESSAGE value="remove twiter" />
     <MESSAGE value="migrated to react project" />
-    <option name="LAST_COMMIT_MESSAGE" value="migrated to react project" />
+    <MESSAGE value="uidatng info" />
+    <option name="LAST_COMMIT_MESSAGE" value="uidatng info" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="364" y="0" key="CommitChangelistDialog2" timestamp="1591422159569">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="364" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1591422159569" />
     <state x="361" y="141" key="Vcs.Push.Dialog.v2" timestamp="1591420277081">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
