@@ -38,7 +38,7 @@ function ProfileSection({ socialLinks }) {
             <div className="ro-height-1-1 ro-row-right uk-flex uk-flex-middle uk-flex-right">
 
               <div className="ro-profile-img-wrap">
-                <img src="https://media.licdn.com/dms/image/C4E03AQHJPKi-KaFgnQ/profile-displayphoto-shrink_800_800/0?e=1582761600&v=beta&t=KpW9J0XILKf3Wf9cNyXcjSA18TB_Q4FAffVCBdy-cX8" className="ro-profile-img" />
+                <img src="94425768_10220120952626545_2401481356686131200_n.jpg" className="ro-profile-img" />
                 {
                   socialLinks.map( link => (
                     <a href={link.href} target="_blank" className="uk-button">

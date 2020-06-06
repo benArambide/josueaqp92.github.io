@@ -31,10 +31,6 @@ const navigationItems = [
 
 const socialLinks = [
   {
-    href: 'https://www.facebook.com/benjamin.arambide',
-    icon: 'uk-icon-facebook'
-  },
-  {
     href: 'https://github.com/josueaqp92',
     icon: 'uk-icon-github'
   },
